@@ -199,7 +199,7 @@ public class VisaServicesFragment extends Fragment {
 
         @Override
         public Fragment getItem(int position) {
-            String imageUrl = "file:///android_asset/malaysia.png";
+            String imageUrl = "file:///android_asset/singapore.png";
             String countryName = countryList.get(position).country;
             return BannerFragment.newInstance(imageUrl, countryName);
         }
