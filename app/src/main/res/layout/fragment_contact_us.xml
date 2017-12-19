@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:background="@color/icons"
+            android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.tripbegins.Fragments.ContactUsFragment">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/header_bg"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Begins"
+                android:textColor="@color/icons"
+                android:textSize="32sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/icons"/>
+        </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="150dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="CONTACT US"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:drawableLeft="@android:drawable/presence_audio_away"
+            android:drawablePadding="16dp"
+            android:text="+919876543210"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_call"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_call"/>
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="48dp"
+            android:background="@android:drawable/stat_sys_phone_call"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_title"
+            />
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/sym_action_email"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="@+id/btn_call"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_call"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:drawableLeft="@android:drawable/presence_audio_away"
+            android:drawablePadding="16dp"
+            android:text="info@tripbegins.com"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_email"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_email"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@android:drawable/presence_audio_away"
+            android:drawablePadding="16dp"
+            android:lineSpacingExtra="3dp"
+            android:text="No 79,\n1st floor,\nPerambur high road,\nChennai, India - 600 011."
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"/>
+
+        <ImageView
+            android:id="@+id/iv_map"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/location_trip_begin_small"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

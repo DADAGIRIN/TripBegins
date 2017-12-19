@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TripBegins</string>
+    <string name="about_us_content">\n\t\t Trip begins is subsidiary concern of RED Trendz. We are specialised in Air-ticketing and
+        visa services. Trip begins is now one of the largest international tour operators in the world. \n\n\t\t We aim to exceed our
+        client’s expectations with every visit and personalised booking. We are your ‘one-stop-travel-spot’ for the latest discount
+        all-inclusive packages, budget-friendly flights, 5-star luxury hotels, car rentals, travel insurance and last minute travel deals.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="okay_to_board">To process the ok to board, you can send request to maatripbegins@gmail.com \n\n Documents required
+        \n\n\t\t 1.Passport front and last page \n\n\t\t 2.Return tickets \n\n\t\t 3.Visa copy</string>
+
+    <string name="location" formatted="false" translatable="false">https://www.google.co.in/maps/place/Trip+Begins/@13.108152,80.2452453,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5265b9bc3bebc9:0x5910a80cf59d4b3a!8m2!3d13.108152!4d80.2474347</string>
+
+</resources>
