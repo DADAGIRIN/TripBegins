@@ -76,7 +76,7 @@ public class VisaServicesFragment extends Fragment {
         adapter = new VisaOptionsAdapter(new OnVisaServiceSelect() {
             @Override
             public void onOptionSelect(VisaServices data) {
-
+// yet to implement
             }
         });
 
