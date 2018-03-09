@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fcfcfc">
 
-    <View
+    <!--<View
         android:id="@+id/divider"
         android:layout_width="0dp"
         android:layout_height="0.5dp"
@@ -16,73 +15,137 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pager_container"/>
+        app:layout_constraintTop_toBottomOf="@+id/pager_container"/>-->
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="225dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="225dp"/>
+        app:layout_constraintGuide_percent="0.10" />
 
     <com.tripbegins.CustomViews.HomeScreenOptions
         android:id="@+id/layout_visa"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline12"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:src="@mipmap/ic_launcher"
-        app:text="Visa Services"/>
-
-    <com.tripbegins.CustomViews.HomeScreenOptions
-        android:id="@+id/layout_track"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_okay"
-        app:src="@mipmap/ic_launcher"
-        app:text="track your Application"/>
+        app:text="Visa Services"
+        app:layout_constraintRight_toLeftOf="@+id/guideline14"
+        />
 
     <com.tripbegins.CustomViews.HomeScreenOptions
         android:id="@+id/layout_contact"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_about"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.6"
         app:src="@mipmap/ic_launcher"
-        app:text="Contact Us"/>
+        app:text="Contact Us"
+        app:layout_constraintRight_toLeftOf="@+id/guideline13" />
 
     <com.tripbegins.CustomViews.HomeScreenOptions
         android:id="@+id/layout_about"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_track"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
         app:src="@mipmap/ic_launcher"
-        app:text="About Us"/>
+        app:text="About Us"
+        app:layout_constraintRight_toLeftOf="@+id/guideline14"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <com.tripbegins.CustomViews.HomeScreenOptions
         android:id="@+id/layout_okay"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_visa"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
         app:src="@mipmap/ic_launcher"
-        app:text="Okay to Board"/>
+        app:text="Okay to Board"
+        app:layout_constraintRight_toLeftOf="@+id/guideline13"
+         />
 
-    <FrameLayout
+    <com.tripbegins.CustomViews.HomeScreenOptions
+        android:id="@+id/layout_call_us"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:src="@mipmap/ic_launcher"
+        app:text="Call us"
+        app:layout_constraintRight_toLeftOf="@+id/guideline13"
+  />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <com.tripbegins.CustomViews.HomeScreenOptions
+        android:id="@+id/layout_track"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:src="@mipmap/ic_launcher"
+        app:text="track your Application"
+        app:layout_constraintRight_toLeftOf="@+id/guideline14"
+        />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline12"
+        app:layout_constraintGuide_percent="0.16"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline13"
+        app:layout_constraintGuide_percent="0.90"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline14"
+        app:layout_constraintGuide_percent="0.48"
+        android:orientation="vertical" />
+
+    <!--<FrameLayout
         android:id="@+id/pager_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -108,6 +171,6 @@
             app:tabGravity="center"
             app:tabIndicatorHeight="0dp"/>
 
-    </FrameLayout>
+    </FrameLayout>-->
 
 </android.support.constraint.ConstraintLayout>

@@ -11,4 +11,6 @@
 
     <string name="location" formatted="false" translatable="false">https://www.google.co.in/maps/place/Trip+Begins/@13.108152,80.2452453,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5265b9bc3bebc9:0x5910a80cf59d4b3a!8m2!3d13.108152!4d80.2474347</string>
 
+    <string name="passenger_upload_hint">NOTE: Only pdf | jpg | png format are allowed.</string>
+    <string name="passenger_proof">Proof</string>
 </resources>
