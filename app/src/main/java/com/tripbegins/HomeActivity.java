@@ -10,6 +10,7 @@ import com.tripbegins.Fragments.AboutUsFragment;
 import com.tripbegins.Fragments.ContactUsFragment;
 import com.tripbegins.Fragments.HomeFragment;
 import com.tripbegins.Fragments.OkayToBoardFragment;
+import com.tripbegins.Fragments.PassengerListEntryFragment;
 import com.tripbegins.Fragments.TrackApplicationFragment;
 import com.tripbegins.Fragments.VisaServicesFragment;
 import com.tripbegins.Listener.OnFragmentInteractionListener;
@@ -88,10 +89,16 @@ public class HomeActivity extends AppCompatActivity implements OnFragmentInterac
     }
 
     private void onContactUs() {
-        getSupportFragmentManager()
+       /* getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.frame_container, new ContactUsFragment(), "ContactUsFragment")
                 .addToBackStack("ContactUsFragment")
+                .commit();*/
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.frame_container, new PassengerListEntryFragment(), "PassengerEntryContainerFragment")
+                .addToBackStack("PassengerEntryContainerFragment")
                 .commit();
     }
 

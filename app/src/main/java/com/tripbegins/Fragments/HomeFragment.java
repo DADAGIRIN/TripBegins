@@ -4,11 +4,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +23,7 @@ import java.util.TimerTask;
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
     View view;
-    ViewPager pager;
+    //ViewPager pager;
     HomePagerAdapter adapter;
     int currentPage = 0;
     List<String> imagesList = new ArrayList<>();
@@ -55,14 +53,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     }
 
     private void initializeUI() {
-        pager = (ViewPager) view.findViewById(R.id.pager_home);
+        //pager = (ViewPager) view.findViewById(R.id.pager_home);
         adapter = new HomePagerAdapter(getFragmentManager());
         getImages();
-        pager.setAdapter(adapter);
+        /*pager.setAdapter(adapter);
         pager.setOffscreenPageLimit(3);
 
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tab_layout_indicator);
-        tabLayout.setupWithViewPager(pager, true);
+        tabLayout.setupWithViewPager(pager, true);*/
 
 //        TODO : add ripple effect for buttons
 
@@ -85,7 +83,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 if (currentPage == imagesList.size()) {
                     currentPage = 0;
                 }
-                pager.setCurrentItem(currentPage++, true);
+                //pager.setCurrentItem(currentPage++, true);
             }
         };
 
